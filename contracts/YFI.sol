@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/SafeERC20.sol";
 import "@openzeppelin/contracts/utils/Address.sol";
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
-contract BIFI is ERC20, ERC20Detailed {
+contract HARDON is ERC20, ERC20Detailed {
     using SafeERC20 for IERC20;
     using Address for address;
     using SafeMath for uint256;
@@ -14,7 +14,7 @@ contract BIFI is ERC20, ERC20Detailed {
     address public governance;
     mapping(address => bool) public minters;
 
-    constructor() public ERC20Detailed("beefy.finance", "BIFI", 18) {
+    constructor() public ERC20Detailed("hardon.finance", "HARDON", 18) {
         governance = msg.sender;
     }
 
